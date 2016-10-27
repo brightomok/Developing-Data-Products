@@ -1,0 +1,21 @@
+ "Ryan Tillis - Plotly Presentation - Data Products - Coursera"
+========================================================
+author: <a href="http://www.ryantillis.com"> Ryan Tillis </a>
+date: "10/27/2016"
+autosize: true
+
+Mtcars 3D Plot
+========================================================
+
+```{r cars, echo = FALSE, results = 'hide'}
+library(plotly)
+data(mtcars)
+attach(mtcars)
+p <- plot_ly(mtcars, x=~wt ,y=~mpg, color = as.factor(mtcars$cyl), mode ="markers", legend = c(4,6,8))
+p
+```
+
+The End
+========================================================
+
+That's all.
